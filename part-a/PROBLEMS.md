@@ -67,3 +67,87 @@ Common (more on mobile)
 
 **Where exactly it breaks:**
 Step 5 → data not persisted to next page
+
+## Problem 4: Pages Load Extremely Slowly
+
+**How I found it:**
+While searching trains
+
+**What is broken:**
+High latency, pages take long to load
+
+**Affected users:**
+All users on peak hours
+
+**Frequency:**
+Frequent
+
+**Current flow — step by step:**
+1. User searches trains
+2. Clicks search
+3. Loading screen appears
+4. Waits 10–20 seconds
+5. Sometimes timeout
+6. Refresh required
+
+**Where exactly it breaks:**
+Step 3 → backend response delay
+
+**Screenshot/Description:**
+Train search loading screen with delay
+
+## Problem 5: Confusing Train Availability Labels
+
+**How I found it:**
+Checking availability
+
+**What is broken:**
+Labels like WL, RAC unclear
+
+**Affected users:**
+New users
+
+**Frequency:**
+Always
+
+**Current flow — step by step:**
+1. User searches trains
+2. Views availability
+3. Sees WL/RAC
+4. Doesn’t understand meaning
+5. Hesitates to book
+6. Leaves platform
+
+**Where exactly it breaks:**
+Step 3 → poor UX communication
+
+**Screenshot/Description:**
+Availability column with WL/RAC
+
+## Problem 6: Poor Mobile Web Experience
+
+**How I found it:**
+Opened IRCTC on mobile browser
+
+**What is broken:**
+UI not responsive, hard to use
+
+**Affected users:**
+Mobile users
+
+**Frequency:**
+Always
+
+**Current flow — step by step:**
+1. User opens IRCTC on mobile
+2. Homepage loads
+3. Elements overlap
+4. Buttons small
+5. Hard to navigate
+6. Booking becomes difficult
+
+**Where exactly it breaks:**
+Step 3 → non-responsive design
+
+**Screenshot/Description:**
+Overlapping UI elements on mobile
